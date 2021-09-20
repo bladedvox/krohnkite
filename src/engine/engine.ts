@@ -254,10 +254,10 @@ class TilingEngine {
             return;
 
         const idx = visibles.indexOf(window);
-        if (!window || idx < 0) { /* unmanaged window -> focus master */
+        /*if (!window || idx < 0) { 
             ctx.currentWindow = visibles[0];
             return;
-        }
+        }*/
 
         const num = visibles.length;
         const newIndex = (idx + (step % num) + num) % num;
